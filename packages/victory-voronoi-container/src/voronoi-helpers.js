@@ -107,7 +107,7 @@ const VoronoiHelpers = {
     return targets.map((target) => {
       const eventKey = continuous === true && target === "data" ? "all" : point.eventKey;
       return {
-        childName, eventKey, target, mutation: () => ({ active: true })
+        childName, eventKey, target
       };
     });
   },
